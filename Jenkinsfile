@@ -19,4 +19,11 @@ pipeline {
             }
         }
     }
+    post {
+        succes {
+            mail to: 'casper@techgrounds.nl',
+            subject: "Successful pipeline: ${currentBuild.fullDisplayName}",
+            body: "It lives! Here's some details: ${env.BUILD_URL}"
+        }
+    }
 }

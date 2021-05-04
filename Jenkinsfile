@@ -18,5 +18,17 @@ pipeline {
                 sh 'printenv'
             }
         }
+
+        stage('final check') {
+            steps {
+                input "No need for nerves, we can still go back. Proceed anyway?"
+            }
+        }
+
+        stage('deploy') {
+            steps {
+                echo 'placeholder while we build a real deployment step'
+            }
+        }
     }
 }

@@ -6,6 +6,7 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'echo hello from my pipeline :D'
+		sh 'echo hi'
             }
         }
     }

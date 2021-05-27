@@ -7,7 +7,7 @@ pipeline {
         }
     environment {
         ENV_VAR = 'globaal'
-        GLB_INT = 12
+        GLB_INT = 14
     }
     stages {
         stage('build') {
